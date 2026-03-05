@@ -36,7 +36,7 @@ export default function AnkiSender() {
         note: {
           deckName: deck,
           modelName: "Basique",
-          fields: { Front: recto, Back: verso },
+          fields: { Recto: recto, Verso: verso },
           tags: tags.split(" ").filter(Boolean),
           options: { allowDuplicate: false },
         },
