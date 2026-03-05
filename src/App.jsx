@@ -41,6 +41,7 @@ export default function AnkiSender() {
           options: { allowDuplicate: false },
         },
       });
+      await ankiRequest("sync");
 
       setStatus({ ok: true, msg: "✅ Carte ajoutée dans Anki !" });
       setRecto("");
