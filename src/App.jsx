@@ -35,7 +35,7 @@ export default function AnkiSender() {
       await ankiRequest("addNote", {
         note: {
           deckName: deck,
-          modelName: "Basic",
+          modelName: "Basique",
           fields: { Front: recto, Back: verso },
           tags: tags.split(" ").filter(Boolean),
           options: { allowDuplicate: false },
